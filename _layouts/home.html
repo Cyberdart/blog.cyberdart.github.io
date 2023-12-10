@@ -5,14 +5,14 @@ layout: default
   {% include nav.html%}
 {% endif %}
 
-<div class="mx-auto text-center prose prose-{{site.theme-color}}">
+<div class="mx-auto prose text-center">
   <div>
-    <img class="object-cover mx-auto h-36 w-36 rounded-full" src="{{site.baseurl}}/assets/img/{{site.author-image}}"
+    <img class="object-cover mx-auto rounded-full h-36 w-36" src="{{site.baseurl}}/assets/img/{{site.author-image}}"
       alt="author profile image">
     <h1>{{site.author}}</h1>
   </div>
   {% if site.author-bio %}
-  <p class="text-gray-500 pb-4">{{site.author-bio}}</p>
+  <p class="pb-4 text-zinc-50">{{site.author-bio}}</p>
   {% endif %}
 </div>
 </div>

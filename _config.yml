@@ -7,12 +7,12 @@ title: "Tailpages: Tailwind + Github Pages"
 description: A Github Pages (Jekyll) template based on TailwindCSS
 
 # color theme for links
-theme-color: indigo # indigo|yellow|pink|green|stone|
+theme-color: green # indigo|yellow|pink|green|stone|
 
 # homepage information
 author: Simone Petroni
 author-bio: Vulnerability Researcher
-author-image: 279.png # file must be in the /assets/img/ folder
+author-image: bear.jpg # file must be in the /assets/img/ folder
 
 # navigation menu
 show-nav-menu: true
@@ -26,11 +26,9 @@ nav-menu:
     permalink: blog
 
 # use false to turn off any social media links
-twitter: https://twitter.com/
-facebook: https://facebook.com/
-instagram: https://instagram.com/
-github: https://github.com/
-linkedin: https://linkedin.com/
+twitter: https://twitter.com/XorDante
+github: https://github.com/timetravelthree
+linkedin: https://linkedin.com/in/simone-petroni
 medium: false
 google-scholar: false
 email: false
