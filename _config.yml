@@ -1,6 +1,6 @@
 # change the followings to match your Github username and repo name
 baseurl: "/timetravelthree.github.io" # the name of your github repo
-url: "https://timetravelthree.github.io" # the url of your github pages
+url: "https://www.dantexor.com" # the url of your github pages
 
 # site information used in page title, meta data etc.
 title: "Tailpages: Tailwind + Github Pages"
@@ -10,20 +10,20 @@ description: A Github Pages (Jekyll) template based on TailwindCSS
 theme-color: indigo # indigo|yellow|pink|green|stone|
 
 # homepage information
-author: Satoshi Nakamoto
-author-bio: Creator of Bitcoin  # change to false to hide
-author-image: 279.png  # file must be in the /assets/img/ folder
+author: Simone Petroni
+author-bio: Vulnerability Researcher
+author-image: 279.png # file must be in the /assets/img/ folder
 
 # navigation menu
 show-nav-menu: true
 
 nav-menu:
-- text: About
-  permalink: about
-- text: Bitcoin
-  permalink: bitcoin
-- text: Blog
-  permalink: blog
+  - text: About
+    permalink: about
+  - text: Bitcoin
+    permalink: bitcoin
+  - text: Blog
+    permalink: blog
 
 # use false to turn off any social media links
 twitter: https://twitter.com/
@@ -44,4 +44,4 @@ google-analytics: G-WCRC1TC2V5
 
 # jekyll plugins - no need to change
 plugins:
-    - jekyll-seo-tag
+  - jekyll-seo-tag
