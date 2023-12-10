@@ -1,27 +1,57 @@
-<footer class="relative px-4 pt-4 pb-4">
-  
+<footer class="inset-x-0 bottom-0 px-4 pt-4 pb-4 mt-auto border-t">
   <!-- divider -->
-  <div class="relative my-8">
-    <div class="absolute inset-0 flex items-center" aria-hidden="true">
-      <div class="w-full border-t border-gray-500"></div>
-    </div>
-    <div class="relative flex justify-center ">
-      <span class="px-2 text-gray-500 bg-[rgb(9_9_11)]">
-        <i class="text-xs far fa-square"></i>
-      </span>
-    </div>
-  </div>
+  <div class="relative my-1 text-base font-semibold text-white uppercase">
+    <div class="container flex items-center w-full gap-4 mx-auto">
+      <span class="mr-auto text-xs"> © 2023 Timetravel3 </span>
 
-  <!-- footer msg -->
-  <div class="flex flex-wrap items-center justify-center">
-    <div class="text-sm text-gray-300">
-      © <span id="get-current-year"></span>
-      {% if site.footer-msg %}
-      <a href="{{site.footer-msg-link}}" class="!no-underline">
-        {{site.footer-msg}}
+      {% if site.twitter %}
+      <a href="{{site.twitter}}" target="_blank">
+        <button
+          class="items-center justify-center w-6 h-6 font-normal text-white rounded-full shadow-lg outline-none align-center focus:outline-none"
+          type="button"
+        >
+          <i class="fa-brands fa-x-twitter"></i>
+        </button>
+      </a>
+      {% endif %} {% if site.github %}
+      <a href="{{site.github}}" target="_blank">
+        <button
+          class="items-center justify-center w-6 h-6 font-normal text-white rounded-full shadow-lg outline-none align-center focus:outline-none"
+          type="button"
+        >
+          <i class="fa-brands fa-github"></i>
+        </button>
+      </a>
+      {% endif %} {% if site.linkedin %}
+      <a href="{{site.linkedin}}" target="_blank">
+        <button
+          class="items-center justify-center w-6 h-6 font-normal text-white rounded-full shadow-lg outline-none align-center focus:outline-none"
+          type="button"
+        >
+          <i class="fab fa-linkedin"></i>
+        </button>
+      </a>
+      {% endif %} {% if site.google-scholar %}
+      <a href="{{site.google-scholar}}" target="_blank">
+        <button
+          class="items-center justify-center w-6 h-6 font-normal text-white rounded-full shadow-lg outline-none align-center focus:outline-none"
+          type="button"
+        >
+          <i class="fas fa-graduation-cap"></i>
+        </button>
+      </a>
+      {% endif %} {% if site.email %}
+      <a href="{{site.email}}" target="_blank">
+        <button
+          class="items-center justify-center w-6 h-6 font-normal text-white rounded-full shadow-lg outline-none align-center focus:outline-none"
+          type="button"
+        >
+          <i class="fas fa-paper-plane"></i>
+        </button>
       </a>
       {% endif %}
+
+      <!-- footer msg -->
     </div>
-  </div>
   </div>
 </footer>

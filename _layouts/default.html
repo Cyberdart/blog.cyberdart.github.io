@@ -1,64 +1,74 @@
 <!DOCTYPE html>
-<html lang="{{ site.lang | default: " en-US" }}">
+<html lang="en-US">
+  <head>
+    <!-- google analytics -->
+    {% if site.google-analytics %} {% include google-analytics.html %} {% endif
+    %}
 
-<head>
+    <!-- Jekyll SEO plugin -->
+    {% seo %}
 
-  <!-- google analytics -->
-  {% if site.google-analytics %}
-    {% include google-analytics.html %}
-  {% endif %}
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <title>{{ site.title }}</title>
 
-  <!-- Jekyll SEO plugin -->
-  {% seo %}
+    <!-- TailwindCSS and Inter Font-->
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css" />
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tailwind.css" />
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css" />
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta charset="utf-8">
-  <title>{{ site.title }}</title>
+    <!-- fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.5.1/css/all.css"
+    />
 
-  <!-- TailwindCSS and Inter Font-->
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/main.css">
-  <link rel="stylesheet" href="{{site.baseurl}}/assets/css/tailwind.css">
-  <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
-
-  <!-- fontawesome -->
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.1/css/all.css">
-  
     <!-- highlight.js -->
-   <link rel="stylesheet"
-    href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs2015.min.css">
-  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
-  <script>hljs.highlightAll();</script>
-  
-  <!-- MathJax -->
+    <link
+      rel="stylesheet"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs2015.min.css"
+    />
+    <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
+    <script>
+      hljs.highlightAll();
+    </script>
+
+    <!-- MathJax -->
+    <script>
+      MathJax = {
+        tex: {
+          inlineMath: [
+            ["$", "$"],
+            ["\\(", "\\)"],
+          ],
+        },
+      };
+    </script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script
+      id="MathJax-script"
+      async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
+    ></script>
+  </head>
+
+  <body class="font-sans bg-[rgb(9_9_11)] min-h-screen flex flex-col">
+    {% if site.show-nav-menu %} {% include nav.html%} {% endif %}
+    <div class="relative flex flex-col mx-auto my-32">{{ content }}</div>
+    {% include footer.html %}
+  </body>
+
   <script>
-    MathJax = {
-      tex: {
-        inlineMath: [['$', '$'], ['\\(', '\\)']]
-      },
-    };
-  </script>
-  <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-  <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
- </head>
+    /* Funtion for getting the current year in the footer */
+    (function () {
+      if (document.getElementById("get-current-year")) {
+        document.getElementById("get-current-year").innerHTML =
+          new Date().getFullYear();
+      }
+    })();
 
-<body class="mx-auto font-sans bg-[rgb(9_9_11)] max-w-prose">
-  <div class="pt-12 pb-4">
-    {{ content }}
-  </div>
-</body>
-
-<script>
-  /* Funtion for getting the current year in the footer */
-  (function () {
-    if (document.getElementById("get-current-year")) {
-      document.getElementById(
-        "get-current-year"
-      ).innerHTML = new Date().getFullYear();
-    }
-  })();
-
-  /* Function for opning navbar on mobile */
-  function toggleNavbar(collapseID) {
+    /* Function for opning navbar on mobile */
+    function toggleNavbar(collapseID) {
       document.getElementById(collapseID).classList.toggle("hidden");
       document.getElementById(collapseID).classList.toggle("block");
     }
@@ -72,16 +82,16 @@
       document.getElementById(dropdownID).classList.toggle("block");
     }
 
-  /* Function for show/hide table of content */
-  function toggleTOC() {
-    var toc = document.getElementById('toc');
-        if (toc.style.display == "block"){ // if toc hidden, display it 
-            toc.style.display = "none";
-        }
-        else{ // if toc displayed, hidden it
-            toc.style.display = "block";
-        }
+    /* Function for show/hide table of content */
+    function toggleTOC() {
+      var toc = document.getElementById("toc");
+      if (toc.style.display == "block") {
+        // if toc hidden, display it
+        toc.style.display = "none";
+      } else {
+        // if toc displayed, hidden it
+        toc.style.display = "block";
+      }
     }
-</script>
-
+  </script>
 </html>

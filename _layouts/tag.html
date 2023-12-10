@@ -2,8 +2,6 @@
 layout: default
 ---
 
-{% if site.show-nav-menu %} {% include nav.html%} {% endif %}
-
 <div class="px-4 pt-4 prose">
   <h1 class="mt-6 mb-6 text-center">{{ page.title }}</h1>
   {% for tag in site.tags %}
@@ -16,5 +14,3 @@ layout: default
   </div>
   {% endfor %} {{content}}
 </div>
-
-{% include footer.html %}

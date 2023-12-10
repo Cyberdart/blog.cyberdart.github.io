@@ -1,4 +1,6 @@
-<nav class="flex flex-wrap items-center justify-center px-2 mb-6">
+<nav
+  class="fixed inset-x-0 top-0 z-40 flex flex-wrap items-center justify-center px-2 py-4 mb-6 border-b backdrop-blur-lg isolate backdrop-filter"
+>
   <div
     class="container flex flex-wrap items-center justify-center px-4 mx-auto"
   >
@@ -28,41 +30,33 @@
         </svg>
       </button>
     </div>
-    <div class="hidden md:block" id="navbar">
-      <div class="flex flex-col w-full gap-3 mr-auto md:flex-row">
-        {% if page.url != "/" %}
-        <!-- don't show Home in menu for Homepage -->
-        <div class="relative group">
-          <a
-            class="py-2 mx-auto text-sm uppercase transition text-gray-50 lg:py-1"
-            href="{{site.baseurl}}/"
-          >
-            Home
-          </a>
-          <div
-            class="absolute bottom-0 left-0 w-0 group-hover:w-full h-px bg-teal-400 transition-[width] duration-300"
-          ></div>
-        </div>
-        {% endif %}
-
+    <div class="hidden w-full md:flex" id="navbar">
+      <div class="mr-auto">
+        <a
+          class="py-2 text-xs font-semibold tracking-widest uppercase align-middle transition text-zinc-50 lg:py-1"
+          href="{{site.baseurl}}/"
+        >
+          timetravel3
+        </a>
+      </div>
+      <div class="flex flex-col gap-3 md:flex-row">
         <!-- dynamic menu based on navigation info in _config.yml -->
-        {% for link in site.nav-menu %} {% if page.permalink !=
-        {{link.permalink}} %}
+        {% for link in site.nav-menu %}
         <!-- don't show current page in menu -->
 
         <div class="relative group">
           <a
-            class="py-2 mx-auto text-sm uppercase transition text-gray-50 lg:py-1"
+            class="py-2 mx-auto text-xs font-semibold tracking-widest uppercase transition text-zinc-50 lg:py-1"
             href="{{site.baseurl}}/{{link.permalink}}"
           >
             {{link.text}}
           </a>
           <div
-            class="absolute bottom-0 left-0 w-0 group-hover:w-full h-px bg-teal-400 transition-[width] duration-300"
+            class="absolute bottom-0 left-0 w-0 group-hover:w-full h-px transition-[width] duration-300 bg-teal-400"
           ></div>
         </div>
 
-        {% endif %} {% endfor %}
+        {% endfor %}
       </div>
     </div>
   </div>
