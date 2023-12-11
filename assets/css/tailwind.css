@@ -915,11 +915,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   padding-bottom: 0.25rem;
 }
 
-.py-32 {
-  padding-top: 8rem;
-  padding-bottom: 8rem;
-}
-
 .pt-4 {
   padding-top: 1rem;
 }
@@ -1020,10 +1015,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .font-normal {
   font-weight: 400;
-}
-
-.font-bold {
-  font-weight: 700;
 }
 
 .uppercase {
@@ -1478,6 +1469,8 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 2em;
   font-size: 0.875em;
   line-height: 1.7142857;
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 .prose :where(thead):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
@@ -1680,6 +1673,10 @@ Ensure the default browser behavior of the `hidden` attribute.
   margin-bottom: 0;
 }
 
+.prose :where(tr):not(:where([class~="not-prose"],[class~="not-prose"] *)) {
+  border-bottom-width: 0;
+}
+
 .hljs-keyword,
 .hljs-string,
 .hljs-section,
@@ -1693,15 +1690,30 @@ div pre.highlight {
   border-radius: 0.5rem !important;
   border-width: 1px;
   border-color: rgb(63 63 70);
-  /* !rounded-lg !ring-1 !border-0 !ring-zinc-800; */
 }
-
-/* pre.highlight {
-  border-radius: 0 !important;
-} */
 
 .hljs {
   background-color: rgb(10 10 12) !important;
+}
+
+.hljs-ln-numbers {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  text-align: center;
+  color: rgb(113 113 122);
+  border-right: 1px solid rgb(39 39 42);
+  vertical-align: top;
+  padding-right: 5px !important;
+  /* your custom style here */
+}
+
+/* for block of code */
+
+.hljs-ln-code {
+  padding-left: 10px !important;
 }
 
 .hover\:border-teal-200:hover {

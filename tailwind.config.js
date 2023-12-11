@@ -15,6 +15,15 @@ module.exports = {
             "--tw-prose-th-borders": theme("colors.zinc[700]"),
             "--tw-prose-td-borders": theme("colors.zinc[700]"),
 
+            tr: {
+              "border-bottom-width": 0,
+            },
+
+            table: {
+              "margin-top": 0,
+              "margin-bottom": 0,
+            },
+
             pre: {
               padding: "0",
               color: "#1F2933",
