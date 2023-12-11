@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind utilities;
 @tailwind components;
+
+.hljs-keyword,
+.hljs-string,
+.hljs-section,
+.hljs-selector-class,
+.hljs-template-variable,
+.hljs-deletion {
+  color: rgb(45 212 191) !important;
+}
+
+div pre.highlight {
+  border-radius: 0.5rem !important;
+  border-width: 1px;
+  border-color: rgb(63 63 70);
+  /* !rounded-lg !ring-1 !border-0 !ring-zinc-800; */
+}
+
+/* pre.highlight {
+  border-radius: 0 !important;
+} */
+
+.hljs {
+  background-color: rgb(10 10 12) !important;
+}

@@ -19,6 +19,7 @@ module.exports = {
               padding: "0",
               color: "#1F2933",
               backgroundColor: "#F3F3F3",
+              fontFamily: "GeistMono",
             },
             code: {
               padding: "0.2em 0.4em",
@@ -26,6 +27,7 @@ module.exports = {
               color: "#DD1144",
               fontWeight: "400",
               "border-radius": "0.25rem",
+              fontFamily: "GeistMono",
             },
             "code::before": false,
             "code::after": false,
@@ -35,7 +37,8 @@ module.exports = {
         },
       }),
       fontFamily: {
-        sans: ["Inter var", ...defaultTheme.fontFamily.sans],
+        sans: ["Geist"],
+        mono: ["GeistMono"],
       },
     },
   },

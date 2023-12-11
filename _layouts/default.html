@@ -26,7 +26,7 @@
     <!-- highlight.js -->
     <link
       rel="stylesheet"
-      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/vs2015.min.css"
+      href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/styles/github-dark.min.css"
     />
     <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/11.4.0/highlight.min.js"></script>
     <script>
@@ -50,11 +50,22 @@
       async
       src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
     ></script>
+    <style>
+      @font-face {
+        font-family: GeistMono;
+        src: url("{{site.baseurl}}/assets/font/GeistMono-Regular.otf");
+      }
+
+      @font-face {
+        font-family: Geist;
+        src: url("{{site.baseurl}}/assets/font/Geist-Regular.otf");
+      }
+    </style>
   </head>
 
   <body class="font-sans bg-[rgb(9_9_11)] min-h-screen flex flex-col">
     {% if site.show-nav-menu %} {% include nav.html%} {% endif %}
-    <div class="relative flex flex-col mx-auto my-32">{{ content }}</div>
+    <div class="relative flex flex-col mx-auto">{{ content }}</div>
     {% include footer.html %}
   </body>
 
