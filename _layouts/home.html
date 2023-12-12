@@ -65,87 +65,15 @@ layout: default
     </ul>
   </div>
   <div class="flex flex-col gap-8 pb-32 col-span-full">
+    {% for post in site.posts %}
     <a
-      href="{{site.baseurl}}/2022/02/07/code.html"
+      href="{{site.baseurl}}{{ post.url }}"
       class="flex items-center gap-8 divide-x-2 divide-teal-400"
     >
-      <span class="font-mono text-xs">February 7, 2022</span>
-      <div class="pl-8 text-2xl font-semibold text-white">
-        Code Highlighting and Styling
-      </div>
+      <span class="font-mono text-xs">{{post.date | date: "%B %-d, %Y"}}</span>
+      <div class="pl-8 text-2xl font-semibold text-white">{{ post.title}}</div>
     </a>
-    <a
-      href="{{site.baseurl}}/2022/02/07/code.html"
-      class="flex items-center gap-8 divide-x-2 divide-teal-400"
-    >
-      <span class="font-mono text-xs">February 7, 2022</span>
-      <div class="pl-8 text-2xl font-semibold text-white">
-        Code Highlighting and Styling
-      </div>
-    </a>
-    <a
-      href="{{site.baseurl}}/2022/02/07/code.html"
-      class="flex items-center gap-8 divide-x-2 divide-teal-400"
-    >
-      <span class="font-mono text-xs">February 7, 2022</span>
-      <div class="pl-8 text-2xl font-semibold text-white">
-        Code Highlighting and Styling
-      </div>
-    </a>
-    <a
-      href="{{site.baseurl}}/2022/02/07/code.html"
-      class="flex items-center gap-8 divide-x-2 divide-teal-400"
-    >
-      <span class="font-mono text-xs">February 7, 2022</span>
-      <div class="pl-8 text-2xl font-semibold text-white">
-        Code Highlighting and Styling
-      </div>
-    </a>
-    <a
-      href="{{site.baseurl}}/2022/02/07/code.html"
-      class="flex items-center gap-8 divide-x-2 divide-teal-400"
-    >
-      <span class="font-mono text-xs">February 7, 2022</span>
-      <div class="pl-8 text-2xl font-semibold text-white">
-        Code Highlighting and Styling
-      </div>
-    </a>
-    <a
-      href="{{site.baseurl}}/2022/02/07/code.html"
-      class="flex items-center gap-8 divide-x-2 divide-teal-400"
-    >
-      <span class="font-mono text-xs">February 7, 2022</span>
-      <div class="pl-8 text-2xl font-semibold text-white">
-        Code Highlighting and Styling
-      </div>
-    </a>
-    <a
-      href="{{site.baseurl}}/2022/02/07/code.html"
-      class="flex items-center gap-8 divide-x-2 divide-teal-400"
-    >
-      <span class="font-mono text-xs">February 7, 2022</span>
-      <div class="pl-8 text-2xl font-semibold text-white">
-        Code Highlighting and Styling
-      </div>
-    </a>
-    <a
-      href="{{site.baseurl}}/2022/02/07/code.html"
-      class="flex items-center gap-8 divide-x-2 divide-teal-400"
-    >
-      <span class="font-mono text-xs">February 7, 2022</span>
-      <div class="pl-8 text-2xl font-semibold text-white">
-        Code Highlighting and Styling
-      </div>
-    </a>
-    <a
-      href="{{site.baseurl}}/2022/02/07/code.html"
-      class="flex items-center gap-8 divide-x-2 divide-teal-400"
-    >
-      <span class="font-mono text-xs">February 7, 2022</span>
-      <div class="pl-8 text-2xl font-semibold text-white">
-        Code Highlighting and Styling
-      </div>
-    </a>
+    {% endfor %}
   </div>
 </div>
 
