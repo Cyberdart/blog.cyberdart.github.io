@@ -66,9 +66,9 @@
     </style>
   </head>
 
-  <body class="font-sans bg-[rgb(9_9_11)] min-h-screen flex flex-col">
+  <body class="font-sans bg-[rgb(9_9_11)] h-screen flex flex-col">
     {% if site.show-nav-menu %} {% include nav.html%} {% endif %}
-    <div class="relative flex flex-col mx-auto">{{ content }}</div>
+    <div class="relative flex flex-col mx-auto flex-1">{{ content }}</div>
     {% include footer.html %}
   </body>
 

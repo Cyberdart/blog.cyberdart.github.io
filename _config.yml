@@ -1,30 +1,25 @@
 # change the followings to match your Github username and repo name
-baseurl: "/timetravelthree.github.io" # the name of your github repo
-url: "https://www.dantexor.com" # the url of your github pages
+baseurl: "/blog.cyberdart.github.io" # the name of your github repo
+url: "https://blog.cyberdart.eu" # the url of your github pages
 
 # site information used in page title, meta data etc.
-title: "timetravel3"
-description: Blog post of timetravel3
+title: "cyberdart"
+description: Blog post of CyberDart
 
 # color theme for links
 theme-color: green # indigo|yellow|pink|green|stone|
-
-# homepage information
-author: Simone Petroni
-author-image: bear.jpg # file must be in the /assets/img/ folder
-author-discord: timetravel3 # file must be in the /assets/img/ folder
 
 # navigation menu
 show-nav-menu: true
 
 nav-menu:
   - text: About
-    permalink: about
+    permalink: //cyberdart.eu/about
 
 # use false to turn off any social media links
-twitter: https://twitter.com/XorDante
-github: https://github.com/timetravelthree
-linkedin: https://linkedin.com/in/simone-petroni
+twitter: https://twitter.com/realcyberdart
+github: https://github.com/CyberDart
+linkedin: https://linkedin.com/company/cyberdart
 medium: false
 google-scholar: false
 email: false
@@ -32,9 +27,6 @@ email: false
 # footer information
 footer-msg: "Powered by Tailpages"
 footer-msg-link: https://github.com/harrywang/tailpages
-
-# google analytics
-google-analytics: G-WCRC1TC2V5
 
 # jekyll plugins - no need to change
 plugins:

@@ -24,6 +24,10 @@ module.exports = {
               "margin-bottom": 0,
             },
 
+            strong: {
+              color: theme("colors.teal[500]"),
+            },
+
             pre: {
               padding: "0",
               color: "#1F2933",
