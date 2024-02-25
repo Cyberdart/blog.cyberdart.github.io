@@ -3,7 +3,7 @@ baseurl: "/cyberdart.github.io" # the name of your github repo
 url: "https://blog.cyberdart.eu" # the url of your github pages
 
 # site information used in page title, meta data etc.
-title: "cyberdart"
+title: "CyberDart"
 description: Blog post of CyberDart
 
 # color theme for links
