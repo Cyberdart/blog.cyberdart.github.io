@@ -4,8 +4,6 @@ title: Bug Report Guidelines
 tags: Bug-Bounty 2024
 ---
 
-# Bug Report Guidelines
-
 The CyberDart triaging team is committed to improving the efficiency and effectiveness of bug bounty reports. We understand the challenges faced by hackers in crafting comprehensive and impactful vulnerability reports. To aid in this process, we have compiled these guidelines to clarify what constitutes a valid bug, the importance of root cause analysis, and how to effectively communicate the impact of discovered vulnerabilities. 
 
 Our goal is to streamline the triage process, ensure fair evaluation, and ultimately enhance the security posture of the applications we assess.
