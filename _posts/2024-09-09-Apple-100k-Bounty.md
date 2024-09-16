@@ -1,3 +1,9 @@
+---
+layout: post
+title: How Bug Bounty Saved Apple from a Potential Disaster
+tags: Bug-Bounty 2024
+---
+
 # Even the Giants Have Bugs: How a $100,000 Bounty Saved Apple from a Potential Disaster
 
 Most of us would assume that companies like Apple, Google, and Facebook—often grouped under the acronym FAANG—are virtually immune to security vulnerabilities. With their vast resources, top-tier talent, and rigorous testing processes, it’s easy to think that these tech giants are impenetrable. However, the truth is far more complex. Even the most secure systems can have hidden flaws, and it’s often through bug bounty programs that these critical vulnerabilities are uncovered before they can be exploited.
