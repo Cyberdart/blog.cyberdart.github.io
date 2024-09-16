@@ -4,7 +4,10 @@ title: Il Disastro di CrowdStrike: Un Déjà Vu
 tags: Bug-Bounty 2024
 ---
 
+<p>
 L'aggiornamento di CrowdStrike ha causato il blocco di milioni di macchine Windows, richiamando alla memoria un episodio simile avvenuto con un aggiornamento di McAfee Antivirus nel 2010. L'evento ha creato disservizi in sistemi bancari, aeroporti, per citarne solo alcuni. La connessione sorprendente tra questi due eventi è George Kurtz, CTO di McAfee nel 2010 e attuale CEO di CrowdStrike. Kurtz ha perso 300 milioni di dollari in ricchezza "su carta" a causa del fiasco di McAfee, ma la vera preoccupazione risiede nelle somiglianze tra i due incidenti.
+</p>
+
 ### Il "Validator"
 Le istanze del template vengono create e configurate attraverso l'uso del Sistema di Configurazione dei Contenuti, che include il Validatore di Contenuti (Validator) che esegue controlli di convalida sui contenuti prima della loro pubblicazione.
 ### Il Problema Tecnico
