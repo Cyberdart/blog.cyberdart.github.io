@@ -1,3 +1,9 @@
+---
+layout: post
+title: Public vs Private Bug Bounty Program
+tags: Bug-Bounty 2024 Private-Programs Public-Programs
+---
+
 # Public vs Private Bug Bounty Program
 
 When launching a bug bounty program, one of the most important decisions you’ll face is whether to make it public or keep it private. Both public and private bug bounty programs have their benefits and challenges, and the choice depends on your organization’s goals, security maturity, and the resources available to manage the program.
