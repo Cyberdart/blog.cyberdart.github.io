@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Malvertising Slack
+title: Malvertising\: Slack
 tags: Malvertising Bug-Bounty
 ---
 
