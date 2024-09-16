@@ -1,4 +1,8 @@
-# Malvertising: Slack
+---
+layout: post
+title: Malvertising: Slack
+tags: Malvertising Bug-Bounty
+---
 
 Malvertising, the practice of using online advertisements to distribute malware, represents a significant threat in the cybersecurity landscape. This technique disguises malicious software as legitimate applications through seemingly innocuous ads, exploiting the inherent trust users place in advertisements on reputable platforms. As a result, attackers can bypass many traditional security defenses.
 
