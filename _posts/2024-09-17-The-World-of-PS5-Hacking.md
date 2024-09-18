@@ -24,7 +24,7 @@ Recently, **theflow0** made headlines in the PlayStation hacking community by re
 
 TheFlow’s discovery reveals that a malicious PPPoE server can cause denial-of-service or, worse, remote code execution in the kernel context on both PS4 and PS5. This is due to a heap buffer overwrite and overread in functions such as `sppp_lcp_RCR` and `sppp_ipcp_RCR`. Notably, both consoles are vulnerable to a long-known issue (CVE-2006-4304), where invalid options can lead to a heap buffer overflow, enabling malicious actors to overwrite or overread the heap memory.
 
-The vulnerability was reported on September 22, 2023, and disclosed on April 25, 2024, resulting in a \$12,500 bounty. Additionally, recent activity, specifically 22 days ago, suggests that theflow0 has discovered another vulnerability, which earned him an additional \$10,000 bounty. Although details are sparse, this new discovery could lead to another significant exploit, further advancing progress in PS5 hacking.
+The vulnerability was reported on September 22, 2023, and disclosed on April 25, 2024, resulting in a 12,500 USD bounty. Additionally, recent activity, specifically 22 days ago, suggests that theflow0 has discovered another vulnerability, which earned him an additional 10,000 USD bounty. Although details are sparse, this new discovery could lead to another significant exploit, further advancing progress in PS5 hacking.
 ### Why Are These Hacks Important?
 
 For many, hacking a console is exciting not because it facilitates piracy but because it unlocks new possibilities for custom content. A hacked PS5 or PS4 can allow users to:
