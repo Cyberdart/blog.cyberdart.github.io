@@ -2,24 +2,18 @@
 layout: default
 ---
 
-<div
-  class="mx-auto max-w-3xl text-zinc-400 mt-[57px] border-x p-8 border-zinc-700 h-full"
->
+<div class="mx-auto max-w-3xl text-zinc-400 mt-[57px] border-x p-8 border-zinc-700 h-full">
   <div class="grid grid-cols-[1fr_auto] gap-8">
     <div class="col-span-full">
-      <img
-        class="w-1/2 object-cover grayscale origin-center"
-        src="https://cdn.cyberdart.eu/assets/img/cyberdart/title-light-bold.svg"
-      />
+      <img class="w-1/2 object-cover grayscale origin-center"
+        src="https://cdn.cyberdart.eu/assets/img/cyberdart/title-light-bold.svg" />
     </div>
-    <div
-      class="flex text-xl font-semibold text-white group gap-x-0.5 col-span-full translate-y-4"
-    >
+    <div class="flex text-xl font-semibold text-white group gap-x-0.5 col-span-full translate-y-4 cursor-default">
       What can you find here
       <div class="relative transition group-hover:-translate-y-0.5">?</div>
     </div>
     <div class="flex flex-col gap-8 pr-8">
-      <div class="cursor-default group">
+      <div class="group">
         <p>
           Explore cybersecurity topics through this blog post, spotlighting
           CyberDart. contribute to the future of cybersecurity with CyberDart.
@@ -28,14 +22,9 @@ layout: default
     </div>
     <div class="flex flex-col gap-8 pb-32 col-span-full">
       {% for post in site.posts %}
-      <a
-        href="{{site.baseurl}}{{ post.url }}"
-        class="flex items-center gap-8 divide-x-2 divide-teal-400"
-      >
-        <span class="font-mono text-xs"
-          >{{post.date | date: "%B %-d, %Y"}}</span
-        >
-        <div class="pl-8 text-2xl font-semibold text-white">
+      <a href="{{site.baseurl}}{{ post.url }}" class="flex flex-col border-teal-400 ml-2 pl-2 border-l-2">
+        <div class="font-mono text-xs">{{post.date | date: "%B %-d, %Y"}}</div>
+        <div class="text-2xl font-semibold text-white">
           {{ post.title}}
         </div>
       </a>
