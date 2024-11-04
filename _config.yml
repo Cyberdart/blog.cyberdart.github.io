@@ -2,6 +2,9 @@
 baseurl: "/cyberdart.github.io" # the name of your github repo
 url: "https://blog.cyberdart.eu" # the url of your github pages
 
+# enable google-analytics
+google-analytics: true
+
 # site information used in page title, meta data etc.
 title: "CyberDart"
 description: Blog post of CyberDart
